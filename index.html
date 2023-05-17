@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalabel=no"
+    />
+    <link rel="stylesheet" href="qs.css" />
+    <title>Registration Form</title>
+    <link rel="icon" href="public/image/cdd.png" type="image/x-icon" />
+    <style>
+      .print-button {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <form action="#" class="container"> -->
+    <form action="/action_page.php" class="container">
+      <!-- <div class="content"> -->
+      <img src="public/image/cdd.png" class="logo" />
+      <h1>Registration</h1>
+      <h3>Personal Details</h3>
+      <div class="pr-dtl">
+        <div class="input-div">
+          <label for="">Full Name <span>*</span></label>
+          <input type="text" required />
+        </div>
+        <div class="input-div">
+          <label for="">Email <span>*</span></label>
+          <input type="email" required />
+        </div>
+        <div class="input-div">
+          <label for="">Phone Number <span>*</span></label>
+          <input type="number" placeholder="+91" pattern="[0-9]{10}" required />
+        </div>
+        <div class="input-div">
+          <label for="college">College name</label>
+          <input type="text" name="college" />
+        </div>
+        <div class="input-div">
+          <label for="Branch">Branch</label> <input type="text" name="Branch" />
+        </div>
+        <div class="input-div">
+          <label for="Year">Year</label>
+          <input type="number" name="Year" min="1" max="4" />
+        </div>
+        <div class="input-div">
+          <label for="Semester">Semester</label>
+          <input type="number" name="Sem" min="1" max="8" />
+        </div>
+        <div class="input-div">
+          <label for="Registration Number">Registration Number</label>
+          <input
+            type="number"
+            name="Registration Number"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
+        </div>
+      </div>
+      <button class="print-button btn-primary" onclick="window.print()">
+        Print
+      </button>
+
+      <!-- <h3> Address </h3>
+    <div class="add-dtl">
+      <div class="input-div">
+        <label for="">Current Address<span>*</span></label>
+        <input type="text"  required>
+      </div>
+      <div class="input-div">
+        <label for="">Permanent Address <span>*</span></label>
+        <input type="text" required>
+      </div>
+    </div> -->
+    </form>
+  </body>
+</html>
